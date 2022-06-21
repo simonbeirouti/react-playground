@@ -1,16 +1,14 @@
+import ExpenseDate from './ExpenseDate'
 import { Parent, Description, ItemTitle, ItemPrice } from '../styles/ExpenseItem.styling'
 
-export default function ExpenseItem() {
-    const expenseDate = new Date(2022, 8, 17)
-    const expenseTitle = 'Car insurance'
-    const expenseAmount = 293
+export default function ExpenseItem(props) {
 
     return (
         <Parent>
-            <div>{expenseDate.toISOString()}</div>
+            <ExpenseDate date={props.date} />
             <Description>
-                <ItemTitle>{expenseTitle}</ItemTitle>
-                <ItemPrice>{expenseAmount}</ItemPrice>
+                <ItemTitle>{props.title}</ItemTitle>
+                <ItemPrice>{props.amount}</ItemPrice>
             </Description>
         </Parent>
     );
