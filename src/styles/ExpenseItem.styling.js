@@ -1,6 +1,18 @@
 import { device } from "./constants"
 import styled from "styled-components"
 
+// Expense item list 
+export const ExpenseItemList = styled.div`
+    padding: 1rem;
+    background-color: rgb(31, 31, 31);
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+`
+
+// Expense item styling
 export const Parent = styled.div`
     display: flex;
     justify-content: space-between;
@@ -48,4 +60,29 @@ export const ItemPrice = styled.p`
         font-size: 1.25rem;
         padding: 0.5rem 1.5rem;    
     }
+`
+
+// Expense date styling
+export const ExpenseDateParent = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+`
+export const ExpenseMonth = styled.div`
+    font-size: 0.75rem;
+    font-weight: bold;
+`
+export const ExpenseYear = styled.div`
+    font-size: 0.75rem;
+`
+export const ExpenseDay = styled.div`
+    font-size: 1.5rem;
+    font-weight: bold;
 `
