@@ -1,4 +1,4 @@
-import { ExpenseDateParent, ExpenseMonth, ExpenseDay, ExpenseYear  } from "../styles/ExpenseItem.styling"
+import { ExpenseDateParent, ExpenseMonth, ExpenseDay, ExpenseYear  } from "./ExpenseItem.styling"
 
 export default function ExpenseDate(props) {
     const month = props.date.toLocaleString('en-US', {month: 'long'})

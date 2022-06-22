@@ -1,4 +1,4 @@
-import { device } from "./constants"
+import { device } from "../../styles/constants"
 import styled from "styled-components"
 
 // Expense item list 
