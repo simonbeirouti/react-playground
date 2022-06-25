@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExpenseItemList } from "./ExpenseItem.styling";
+import { ExpenseItemList } from "./ExpenseStyling";
 import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter";
 

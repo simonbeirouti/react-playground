@@ -1,10 +1,5 @@
 import ExpenseDate from "./ExpenseDate";
-import {
-  Parent,
-  Description,
-  ItemTitle,
-  ItemPrice,
-} from "./ExpenseItem.styling";
+import { Parent, Description, ItemTitle, ItemPrice } from "./ExpenseStyling";
 
 export default function ExpenseItem(props) {
   return (
