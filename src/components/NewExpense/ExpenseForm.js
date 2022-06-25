@@ -5,6 +5,7 @@ import {
   NewExpenseLabel,
   NewExpenseInput,
   NewExpenseAction,
+  BackButton,
 } from "./FormStyling";
 
 export default function ExpenseForm(props) {
@@ -92,6 +93,9 @@ export default function ExpenseForm(props) {
         </div>
       </NewExpenseControls>
       <NewExpenseAction>
+        <BackButton type="button" onClick={props.onCancel}>
+          Cancel
+        </BackButton>
         <NewExpenseButton type="submit">Add expense</NewExpenseButton>
       </NewExpenseAction>
     </form>
