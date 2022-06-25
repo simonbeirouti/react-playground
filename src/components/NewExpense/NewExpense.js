@@ -1,5 +1,5 @@
 import ExpenseForm from "./ExpenseForm";
-import "./ExpenseForm.css";
+import { NewExpenseParent } from "./FormStyling";
 
 export default function NewExpense(props) {
   const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -11,8 +11,8 @@ export default function NewExpense(props) {
   };
 
   return (
-    <div className="new-expense">
+    <NewExpenseParent>
       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
-    </div>
+    </NewExpenseParent>
   );
 }
