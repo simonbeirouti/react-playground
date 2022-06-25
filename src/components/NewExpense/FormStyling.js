@@ -27,6 +27,17 @@ export const NewExpenseButton = styled.button`
   }
 `;
 
+export const BackButton = styled.button`
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 12px;
+  margin-right: 1rem;
+`;
+
 export const NewExpenseControls = styled.div`
   display: flex;
   flex-wrap: wrap;
