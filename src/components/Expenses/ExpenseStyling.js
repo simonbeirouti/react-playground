@@ -23,6 +23,7 @@ export const Parent = styled.div`
   border-radius: 12px;
   background-color: #4b4b4b;
 `;
+
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,6 +39,7 @@ export const Description = styled.div`
     flex: 1;
   }
 `;
+
 export const ItemTitle = styled.h2`
   color: #3a3a3a;
   font-size: 1rem;
@@ -48,6 +50,7 @@ export const ItemTitle = styled.h2`
     font-size: 1.25rem;
   }
 `;
+
 export const ItemPrice = styled.p`
   font-size: 1rem;
   font-weight: bold;
@@ -75,13 +78,16 @@ export const ExpenseDateParent = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export const ExpenseMonth = styled.div`
   font-size: 0.75rem;
   font-weight: bold;
 `;
+
 export const ExpenseYear = styled.div`
   font-size: 0.75rem;
 `;
+
 export const ExpenseDay = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
@@ -111,4 +117,15 @@ export const FilterSelect = styled.select`
   padding: 0.5rem 3rem;
   font-weight: bold;
   border-radius: 6px;
+`;
+
+// Expense list styling
+export const ExpenseListStyle = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+
+export const ExpenseFallback = styled.h2`
+  color: white;
+  text-align: center;
 `;
