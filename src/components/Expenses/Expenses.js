@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ExpenseItemList } from "./ExpenseStyling";
-import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter";
+import ExpenseList from "./ExpenseList";
 
 export default function ExpensesList(props) {
   const [filteredYear, setFilteredYear] = useState("2022");
@@ -10,20 +10,17 @@ export default function ExpensesList(props) {
     setFilteredYear(selectedYear);
   };
 
+  const filteredExpenses = props.items.filter((expense) => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
     <ExpenseItemList>
       <ExpenseFilter
         selected={filteredYear}
         onFilterChange={filterChangeHandler}
       />
-      {props.items.map((item) => (
-        <ExpenseItem
-          key={item.id}
-          date={item.date}
-          title={item.title}
-          amount={item.amount}
-        />
-      ))}
+      <ExpenseList items={filteredExpenses} />
     </ExpenseItemList>
   );
 }
